@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Proyecto académico UPN de consulta y exploración de información de seguridad ciudadana.">
+<title>Bienvenida | Observatorio de Seguridad Ciudadana · Proyecto académico UPN</title>
+<link rel="stylesheet" th:href="@{/css/estilos.css}">
+<script defer th:src="@{/js/app.js}"></script>
+</head>
+<body class="pagina-bienvenida">
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+<header class="cabecera">
+ <div class="envoltura cabecera-interior">
+  <div class="marca"><span class="emblema" aria-hidden="true">◈</span><div><strong>Observatorio de Seguridad Ciudadana</strong><span>Proyecto de pruebas académico UPN</span></div></div>
+  <span class="etiqueta">PROTOTIPO ACADÉMICO</span>
+ </div>
+</header>
+<div class="herramientas"><div class="envoltura herramientas-interior"><span>Opciones de lectura</span><button aria-label="Aumentar tamaño de texto" id="texto-mas" type="button">A+ Aumentar</button><button aria-label="Disminuir tamaño de texto" id="texto-menos" type="button">A− Reducir</button><button aria-pressed="false" id="contraste" type="button">Alto contraste: desactivado</button><button id="restablecer" type="button">Restablecer</button></div></div>
+<main class="envoltura" id="contenido" tabindex="-1">
+ <section class="bienvenida">
+  <span class="eyebrow">Proyecto académico · Interacción Humano-Computador</span>
+  <h1>Consulta información sobre seguridad ciudadana</h1>
+  <p>Elige cómo deseas explorar el prototipo. Cada perfil ofrece una experiencia adaptada a sus necesidades.</p>
+  <div class="perfiles">
+   <article class="perfil-card">
+    <div class="perfil-icono" aria-hidden="true">◎</div>
+    <h2>Ciudadano</h2>
+    <p>Consulta indicadores con pasos sencillos, filtros básicos y explicaciones claras.</p>
+    <ul><li>Búsqueda guiada</li><li>Resultados fáciles de interpretar</li><li>Gráficos y tablas accesibles</li></ul>
+    <a class="boton" href="/ciudadano">Ingresar como ciudadano</a>
+   </article>
+   <article class="perfil-card">
+    <div class="perfil-icono" aria-hidden="true">▥</div>
+    <h2>Investigador</h2>
+    <p>Explora información con filtros avanzados y herramientas de comparación.</p>
+    <ul><li>Filtros territoriales y temporales</li><li>Comparación entre territorios</li><li>Mapa, tablas y descarga CSV</li></ul>
+    <a class="boton" href="/investigador">Ingresar como investigador</a>
+   </article>
+  </div>
+  <p class="aviso-datos"><strong>Importante:</strong> este es un prototipo académico de la UPN, no es un portal oficial del MININTER. Los registros y valores actuales son simulados y no deben utilizarse para decisiones reales.</p>
+ </section>
+ <section class="panel">
+  <h2>¿Qué encontrarás?</h2>
+  <p>Un espacio de demostración para consultar indicadores, revisar su evolución y explorar comparaciones en los ámbitos territoriales del catálogo UBIGEO. Los casos, poblaciones y tasas son simulados para probar la experiencia de usuario.</p>
+ </section>
+</main>
+<footer><div class="envoltura"><strong>Proyecto de pruebas académico UPN sobre el Observatorio de Seguridad Ciudadana</strong><p>Prototipo educativo sin afiliación oficial al MININTER.</p></div></footer>
+</body></html>
